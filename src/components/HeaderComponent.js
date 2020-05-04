@@ -66,7 +66,7 @@ class Header extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<Navbar dark expand="md">
+				<Navbar dark expand="md" fixed="top">
 					<div className="container">
 						<NavbarToggler onClick={this.toggleNav} />
 						<NavbarBrand className="mr-auto" href="/">
@@ -118,7 +118,7 @@ class Header extends Component {
 									) : (
 										<div>
 											<div className="navbar-text mr-3">
-												{this.props.auth.user.id}
+												{this.props.auth.user.displayName}
 											</div>
 											<Button outline onClick={this.handleLogout}>
 												<span className="fa fa-sign-out fa-lg"></span> Logout
