@@ -71,10 +71,10 @@ class Header extends Component {
 						<NavbarToggler onClick={this.toggleNav} />
 						<NavbarBrand className="mr-auto" href="/">
 							<img
-								src="assets/images/logo.png"
-								height="30"
-								width="41"
-								alt="Ristorante Con Fusion"
+								src="assets/images/kean2.gif"
+								height="90"
+								width="300"
+								alt="Kean University"
 							/>
 						</NavbarBrand>
 						<Collapse isOpen={this.state.isNavOpen} navbar>
@@ -118,7 +118,7 @@ class Header extends Component {
 									) : (
 										<div>
 											<div className="navbar-text mr-3">
-												{this.props.auth.user.displayName}
+												{this.props.auth.user.ID}
 											</div>
 											<Button outline onClick={this.handleLogout}>
 												<span className="fa fa-sign-out fa-lg"></span> Logout
@@ -133,20 +133,38 @@ class Header extends Component {
 						</Collapse>
 					</div>
 				</Navbar>
-				<Jumbotron>
+				{/* <Jumbotron>
 					<div className="container">
 						<div className="row row-header">
 							<div className="col-12 col-sm-6">
-								<h1>Ristorante Con Fusion</h1>
+								<h1>Kean University</h1>
 								<p>
-									We take inspiration from the World's best cuisines, and create
-									a unique fusion experience. Our lipsmacking creations will
-									tickle your culinary senses!
+									a public university in Union and Hillside, New Jersey. Kean
+									University is best known for its programs in the humanities
+									and social sciences and in education, graduating the most
+									teachers in the state of New Jersey annually.
 								</p>
 							</div>
 						</div>
 					</div>
-				</Jumbotron>
+				</Jumbotron> */}
+				{/* added info */}
+				<div id="home" className="landing">
+					<div className="home-wrap">
+						<div className="home-inner"></div>
+					</div>
+				</div>
+
+				<div className="caption text-left">
+					<h1>Kean University</h1>
+					<p>a public university in Union and Hillside, New Jersey. Kean</p>
+					<p>University is best known for its programs in the humanities and</p>
+					<p>
+						social sciences and in education, graduating the most teachers in
+					</p>
+					<p>the state of New Jersey annually.</p>
+				</div>
+				{/* added info */}
 				<Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
 					<ModalHeader toggle={this.toggleModal}>Login</ModalHeader>
 					<ModalBody>
