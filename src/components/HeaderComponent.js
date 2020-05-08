@@ -109,7 +109,7 @@ class Header extends Component {
 							<Nav className="ml-auto" navbar>
 								<NavItem>
 									{!this.props.auth.isAuthenticated ? (
-										<Button outline onClick={this.toggleModal}>
+										<Button color="success" onClick={this.toggleModal}>
 											<span className="fa fa-sign-in fa-lg"></span> Login
 											{this.props.auth.isFetching ? (
 												<span className="fa fa-spinner fa-pulse fa-fw"></span>
@@ -120,7 +120,7 @@ class Header extends Component {
 											<div className="navbar-text mr-3">
 												{this.props.auth.user.ID}
 											</div>
-											<Button outline onClick={this.handleLogout}>
+											<Button color="success" onClick={this.handleLogout}>
 												<span className="fa fa-sign-out fa-lg"></span> Logout
 												{this.props.auth.isFetching ? (
 													<span className="fa fa-spinner fa-pulse fa-fw"></span>

@@ -29,7 +29,7 @@ address {
 }
 
 .navbar-dark {
-	background-color: #3d08b9;
+	background-color: #1970d4;
 }
 
 .page-enter {
@@ -72,4 +72,8 @@ address {
 	z-index: 1;
 	color: whitesmoke;
 	padding: 50px;
+}
+
+.fa-sign-in {
+	color: white;
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 import { Loading } from './LoadingComponent';
 import { FadeTransform } from 'react-animation-components';
+import { Link } from 'react-router-dom';
 
 function RenderCard({ item, isLoading, errMess }) {
 	if (isLoading) {
@@ -39,11 +40,13 @@ function ProjectHome(props) {
 						}}
 					>
 						<Card>
-							<CardImg src={'assets/images/register.gif'} alt={'register'} />
-							<CardBody>
-								<CardTitle>{'Register'}</CardTitle>
-								<CardText>{'Register Now'}</CardText>
-							</CardBody>
+							<Link to={'/menu'}>
+								<CardImg src={'assets/images/arrange.gif'} alt={'register'} />
+								<CardBody>
+									<CardTitle>{'Register'}</CardTitle>
+									<CardText>{'Register Now'}</CardText>
+								</CardBody>
+							</Link>
 						</Card>
 					</FadeTransform>
 				</div>
@@ -55,11 +58,13 @@ function ProjectHome(props) {
 						}}
 					>
 						<Card>
-							<CardImg src={'assets/images/arrange.gif'} alt={'arrange'} />
-							<CardBody>
-								<CardTitle>{'Arrange'}</CardTitle>
-								<CardText>{'Arrange your courses Now'}</CardText>
-							</CardBody>
+							<Link to={'/favorites'}>
+								<CardImg src={'assets/images/register.gif'} alt={'arrange'} />
+								<CardBody>
+									<CardTitle>{'Arrange'}</CardTitle>
+									<CardText>{'Arrange your courses Now'}</CardText>
+								</CardBody>
+							</Link>
 						</Card>
 					</FadeTransform>
 				</div>
@@ -71,13 +76,18 @@ function ProjectHome(props) {
 						}}
 					>
 						<Card>
-							<CardImg src={'assets/images/professor.gif'} alt={'professor'} />
-							<CardBody>
-								<CardTitle>{'See Professor Info'}</CardTitle>
-								<CardText>
-									{'Check out your professor information Now'}
-								</CardText>
-							</CardBody>
+							<Link to={'/aboutus'}>
+								<CardImg
+									src={'assets/images/professor.gif'}
+									alt={'professor'}
+								/>
+								<CardBody>
+									<CardTitle>{'See Professor Info'}</CardTitle>
+									<CardText>
+										{'Check out your professor information Now'}
+									</CardText>
+								</CardBody>
+							</Link>
 						</Card>
 					</FadeTransform>
 				</div>
