@@ -72,8 +72,8 @@ class Header extends Component {
 						<NavbarBrand className="mr-auto" href="/">
 							<img
 								src="assets/images/kean2.gif"
-								height="90"
-								width="300"
+								height="75"
+								width="250"
 								alt="Kean University"
 							/>
 						</NavbarBrand>
@@ -91,12 +91,12 @@ class Header extends Component {
 								</NavItem>
 								<NavItem>
 									<NavLink className="nav-link" to="/menu">
-										<span className="fa fa-list fa-lg"></span> Menu
+										<span className="fa fa-list fa-lg"></span> Register
 									</NavLink>
 								</NavItem>
 								<NavItem>
 									<NavLink className="nav-link" to="/favorites">
-										<span className="fa fa-heart fa-lg"></span> My Favorites
+										<span className="fa fa-heart fa-lg"></span> My Courses
 									</NavLink>
 								</NavItem>
 								<NavItem>

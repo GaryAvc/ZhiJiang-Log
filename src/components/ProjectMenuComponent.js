@@ -56,10 +56,10 @@ const ProjectMenu = (props) => {
 						<BreadcrumbItem>
 							<Link to="/home">Home</Link>
 						</BreadcrumbItem>
-						<BreadcrumbItem active>Menu</BreadcrumbItem>
+						<BreadcrumbItem active>Courses</BreadcrumbItem>
 					</Breadcrumb>
 					<div className="col-12">
-						<h3>Menu</h3>
+						<h3>Courses</h3>
 						<hr />
 					</div>
 				</div>

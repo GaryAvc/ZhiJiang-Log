@@ -189,7 +189,7 @@ const DishDetail = (props) => {
 				<div className="row">
 					<Breadcrumb>
 						<BreadcrumbItem>
-							<Link to="/menu">Menu</Link>
+							<Link to="/menu">Register System</Link>
 						</BreadcrumbItem>
 						<BreadcrumbItem active>{props.dish.name}</BreadcrumbItem>
 					</Breadcrumb>

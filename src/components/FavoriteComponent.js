@@ -59,10 +59,10 @@ const Favorites = (props) => {
 						<BreadcrumbItem>
 							<Link to="/home">Home</Link>
 						</BreadcrumbItem>
-						<BreadcrumbItem active>My Favorites</BreadcrumbItem>
+						<BreadcrumbItem active>My Courses</BreadcrumbItem>
 					</Breadcrumb>
 					<div className="col-12">
-						<h3>My Favorites</h3>
+						<h3>My Courses</h3>
 						<hr />
 					</div>
 				</div>

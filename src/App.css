@@ -59,10 +59,17 @@ address {
 	padding: 5;
 }
 
+.nav-link {
+	margin: 1px;
+}
+
 .home-inner {
 	background-image: url(/assets/images/bird.jpg);
 	height: 27rem;
 	margin-top: 35px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px;
 }
 
 .caption {
