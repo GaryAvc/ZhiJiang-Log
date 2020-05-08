@@ -77,3 +77,15 @@ address {
 .fa-sign-in {
 	color: white;
 }
+
+.media-image {
+	width: 200px;
+}
+
+.media-professor {
+	padding: 50px;
+}
+
+.motto {
+	margin: 30px;
+}

@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Home from './HomeComponent';
-import About from './AboutComponent';
 import Menu from './MenuComponent';
 import Contact from './ContactComponent';
 import DishDetail from './DishdetailComponent';
@@ -27,6 +25,7 @@ import { actions } from 'react-redux-form';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import ProjectHome from './ProjectHomeComponent';
+import ProjectAbout from './ProjectAboutComponent';
 
 const mapStateToProps = (state) => {
 	return {
@@ -178,7 +177,7 @@ class Main extends Component {
 							<Route
 								exact
 								path="/aboutus"
-								component={() => <About leaders={this.props.leaders} />}
+								component={() => <ProjectAbout leaders={this.props.leaders} />}
 							/>
 							} />
 							<Route
