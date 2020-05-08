@@ -118,7 +118,7 @@ class Header extends Component {
 									) : (
 										<div>
 											<div className="navbar-text mr-3">
-												{this.props.auth.user.ID}
+												{this.props.auth.user.email}
 											</div>
 											<Button color="success" onClick={this.handleLogout}>
 												<span className="fa fa-sign-out fa-lg"></span> Logout

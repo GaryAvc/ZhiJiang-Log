@@ -2,7 +2,7 @@ import React from 'react';
 import {
 	Card,
 	CardImg,
-	CardImgOverlay,
+	CardBody,
 	CardTitle,
 	Breadcrumb,
 	BreadcrumbItem,
@@ -14,16 +14,16 @@ function RenderMenuItem({ dish, onClick }) {
 	return (
 		<Card>
 			<Link to={`/menu/${dish._id}`}>
-				<CardImg width="100%" src={dish.image} alt={dish.name} />
-				<CardImgOverlay>
+				<CardBody>
 					<CardTitle>{dish.name}</CardTitle>
-				</CardImgOverlay>
+				</CardBody>
+				<CardImg width="100%" src={dish.image} alt={dish.name} />
 			</Link>
 		</Card>
 	);
 }
 
-const Menu = (props) => {
+const ProjectMenu = (props) => {
 	const menu = props.dishes.dishes.map((dish) => {
 		return (
 			<div key={dish._id} className="col-12 col-md-5 m-1">
@@ -68,4 +68,4 @@ const Menu = (props) => {
 		);
 };
 
-export default Menu;
+export default ProjectMenu;

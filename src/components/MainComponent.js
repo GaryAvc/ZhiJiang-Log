@@ -25,6 +25,7 @@ import { actions } from 'react-redux-form';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import ProjectHome from './ProjectHomeComponent';
+import ProjectMenu from './ProjectMenuComponent';
 import ProjectAbout from './ProjectAboutComponent';
 
 const mapStateToProps = (state) => {
@@ -183,7 +184,7 @@ class Main extends Component {
 							<Route
 								exact
 								path="/menu"
-								component={() => <Menu dishes={this.props.dishes} />}
+								component={() => <ProjectMenu dishes={this.props.dishes} />}
 							/>
 							<Route path="/menu/:dishId" component={DishWithId} />
 							<PrivateRoute
